@@ -1,0 +1,84 @@
+.logo-links{
+width: 100%;
+background-color: var(--main-color-darker-2);
+display: flex;
+flex-flow: column;
+align-items: center;
+min-height: 1500px;
+
+}
+.logo-links .logo{
+text-transform: capitalize;
+font-weight: bold;
+color: var(--main-blue-color);
+padding-block: 15px;
+padding-left: 10%;
+width: 100%;
+text-align: start;
+letter-spacing: 2px;
+
+
+}
+.logo-links .links{
+    padding-block: 30px;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid var(--main-color-lighter);
+}
+.logo-links .help{
+    width: 100%;
+    display: flex;
+    padding-left: 10px;
+    padding-block: 15px;
+}
+.logo-links .links a,
+.help a{
+    color: rgb(160, 160, 160);
+    margin-block: 10px;
+    width: 88%;
+    transition: 0.3s;
+    display: flex;
+    overflow: hidden;
+}
+
+.logo-links .links a:hover,
+.logo-links .help a:hover,
+.active{
+    color: white;
+    padding-left: 10px;
+}
+.logo-links .help a > span,
+.logo-links .links a > span{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+@media (max-width:767px){
+    .logo-links .logo{
+        font-size: 9px;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .logo-links .links a{
+        width: fit-content;
+    }
+    .logo-links .help{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 30px;
+    padding-left: 0px;
+    }
+    .logo-links .help a{
+        text-align: center;
+        width: fit-content;
+        padding: 0px;
+    
+    }
+
+
+}

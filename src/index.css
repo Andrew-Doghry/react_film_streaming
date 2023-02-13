@@ -1,10 +1,123 @@
+/* start of global values */
+:root{
+--main-color-lighter:  #2c2e3a;/* for the cards*/
+--main-color: #21232c;/* for the main background */
+--main-color-darker: #1a1c23;/* for the side bar*/
+--main-color-darker-2: #1a1c23;/* for the background of pop up menues*/
+--main-color-darkest: #14151a;/* for the search bar*/
+--main-blue-color: #3185e7;/* for buttons*/
+--card-padding: 10px;
+--button-padding:3px 8px;
+--link-padding:10px 5px;
+--cards-margin:30px;
+--full-section-margin:30px 0px;
+--border-radius:10px;
+--main-transition:0.5s;
+}
 body {
-    background-color: #333;
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    flex-flow: nowrap row;
-    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--main-color);
+    scrollbar-color: var(--main-blue-color) transparent;
+    scrollbar-width: 10px;
+}
+@media (min-width:767px) {
+    .hide-large{
+        display: none;
+    }
 }
 
+@media (max-width:767px) {
+.hide-mob{
+        display: none !important;
+}
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: initial;
+}
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    
+}
+/* small */
+@media (min-width:768px){
+    .container { 
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width:992px){
+    .container {
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width:1200px){
+    .container {
+        width: 1170px;
+    }
+}
+/* end of global values */
+/*so link is an anchor tag */
+
+
+.app-container{
+    display: flex;
+}
+.app-container > .side-bar{
+    width: 15%;
+}
+.app-container > .content{
+width: 85%;
+}
+.content .display-content{
+margin-top: 56px;
+/* position: relative; */
+z-index: initial;
+
+}
+.section{
+padding: 10px;
+
+}
+.section-header{
+display: flex;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+
+}
+.section-title{
+text-transform: capitalize;
+word-spacing: 1px;
+color: #eee;
+}
+.see-more{
+color: var(--main-blue-color);
+text-shadow: 0px 0px 10px black;
+text-transform: capitalize;
+word-spacing: 1px;
+font-weight: 600;
+font-size: 10px;
+}

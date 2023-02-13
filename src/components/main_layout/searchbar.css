@@ -1,0 +1,263 @@
+.search-user-bar{
+    padding: 10px 30px;
+    background-color: var(--main-color-darkest);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content{
+position: relative;
+z-index: 0;
+transition: var(--main-transition);
+}
+.search-user-bar .search-input,
+.search-user-bar form,
+.search-user-bar .user-input
+{
+    display: flex;
+}
+.search-user-bar .user-input{
+width: 30%;
+display: flex;
+justify-content: flex-end;
+}
+
+.search-user-bar .search-input>button,
+.search-user-bar .user-input button,
+.search-user-bar .search-input>input{
+    border: none;
+    outline: none;
+    padding: var(--button-padding);
+    font-size: 10px;
+    
+}
+.search-user-bar .user-input>button{
+border-radius: 5px;
+margin: 0px 3px;
+}
+.search-user-bar .search-input >form > input{
+    background-color: var(--main-color-lighter);
+    border: none;
+    outline: none;
+    caret-color: var(--main-blue-color);
+    padding: 5px 15px;
+}
+.search-user-bar .search-input{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    /* width: 70%; */
+}
+.search-user-bar .search-input > form {
+    transition: 0.6s;
+    width: 100%;
+}
+.hide-search{
+    transform: translateX(-150%);
+}
+.show-search{
+    transform: translateX(0%);    
+}
+.search-user-bar .search-input >.show-search-btn{
+border-radius: 50%;
+position: absolute;
+height: 25px;
+width: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+z-index: 1;
+padding: 10px;
+}
+.search-user-bar .search-input >form > input[type="search"]{
+    color: #eee;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 40px;
+}
+.search-user-bar .search-input >form > input[type="submit"]{
+border-left: 1px solid var(--main-color-darkest);
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+color: white;
+font-weight: bold;
+text-transform: capitalize;
+}
+.search-user-bar .search-input >form > input[type="search"]::placeholder{
+font-weight: 300;
+font-size: 10px;
+}
+@media (max-width:767px){
+    .search-user-bar  {
+    
+    padding: 10px;
+    }
+    .search-user-bar .search-input {
+        width: 60%;
+    }
+    .search-user-bar .search-input form{
+    width: 100%;
+}
+.search-user-bar .search-input >form > input[type="search"]{
+    padding-left: 27px;
+    width: 70%;
+    }
+    .search-user-bar .search-input >form > input[type="submit"]{
+        width: 30%;
+    }
+    .search-user-bar .search-input >form > input{
+    padding: 5px 4px;
+    
+    }
+}
+.search-user-bar .user-input .login-btn{    
+    background-color: transparent;
+    color: white;
+    transition: var(--main-transition);
+    position: relative;
+    z-index: 1011;
+
+}
+.search-user-bar .user-input .login-btn:hover{
+    background-color: var(--main-color-lighter);
+}    
+.search-user-bar .show-search-btn{
+    background-color: var(--main-blue-color);
+    color: white;
+}
+
+.search-user-bar .optmize-btn{
+    background-color: transparent;
+    color: var(--main-blue-color);
+    transition: var(--main-transition);
+    border-radius: 6px;
+}
+.search-user-bar .user-input .optmize-btn:hover{
+    background-color: var(--main-color-lighter);
+} 
+.hide{
+    display: none;
+    opacity: 0;
+}
+.optmize{
+    position: relative;
+    z-index: 0;
+}
+.optmize > .optmize-card{
+    position: absolute;
+    top: 33px;
+    transform: translateY(0%);
+    right: 0px;
+    background-color: var(--main-color-darker);
+    width: 450px;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: var(--main-transition);
+    opacity: 0.0;
+}
+@media (max-width:767px){
+    .optmize > .optmize-card{
+    right: -10px;
+    width: calc(100vw - 15vw);
+    }
+}
+.optmize > .optmize-card >h1{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    text-align: start;
+    margin-block: 10px;    
+}
+.optmize > .optmize-card > .card{
+    background-color: var(--main-color-lighter);
+    padding: 5px 10px;
+    color: #eee;
+    border-radius: 10px;
+    margin-block: 10px;
+    transition: var(--main-transition);
+}
+.optmize > .optmize-card > .card:hover{
+    transform: translateY(-5px);
+}
+.optmize > .optmize-card >.card>h3{
+    font-size: 12px;
+}
+.optmize > .optmize-card > .card .icon{
+    color: white;
+    padding: 2px 5px;
+    background-color: var(--main-color-lighter);
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px 1px var(--main-color-darkest);
+}
+.optmize > .optmize-card > .card > p{
+    color: #777;
+    font-size: 13px;
+    font-weight: normal;
+}
+.login-underlay{
+    left: 0;
+    position: absolute;
+    top: 0%;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background-color: rgb(50, 50, 55);
+    transition: var(--main-transition);
+
+}
+.login-card{
+    padding:10px;
+    top:40vh;
+    left:50%;
+    transform:translate(-50%,-50%);
+    min-width: 400PX;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 2px var(--main-color-darker);
+    position:absolute;
+    background:var(--main-color-darkest);
+    opacity: 0;
+    transition: var(--main-transition);
+    z-index: 5;
+}
+.login-card form{
+    display: flex;
+    flex-flow: column;    
+}
+.login-card form >div {
+    display: flex;
+    flex-flow: column;    
+}
+.login-card form div > label{
+    color: #eee;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-block: 10px;
+}
+.login-card form div > input{
+    outline: none;
+    border: none;
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-block: 5px;
+    caret-color: var(--main-blue-color);
+}
+.login-card form div > input::placeholder{
+    color: black;
+}
+.login-card form  input[type='submit']{
+text-transform: capitalize;
+font-weight: bold;
+background-color: var(--main-blue-color);
+outline: none;
+border: none;
+padding: 5px 10px;
+border-radius: 10px;
+width: 50%;
+margin: 10px auto;
+}
