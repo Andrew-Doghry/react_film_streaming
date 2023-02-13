@@ -1,0 +1,158 @@
+.how-long-bar{
+display: grid;
+width: 100%;
+overflow-x: scroll;
+grid-template-columns: repeat(5,85vw);
+
+}
+.how-long-card{
+width: calc(100% - 20px);
+padding: 10px;
+display: flex;
+align-items: center;
+background-color: var(--main-color-lighter);
+border-radius: var(--border-radius);
+}
+.how-long-card-image{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;}
+.how-long-card-image >img{
+    width: 200px;
+    height: 300px;
+}
+.how-long-card-image >img:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.how-long-card-image >img:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.how-long-card .text{
+    padding: 10px;
+    line-height: 1.2;
+    
+}
+.how-long-card .text h2{
+    color: white;
+    
+}
+.how-long-card .text .title{
+    color: #eee;
+    display: block;
+padding-block-end: 5px;
+font-size: 14px;
+text-transform: capitalize;
+font-weight: bold;
+}
+.how-long-card .text .link{
+    padding: 5px;
+    color: var(--main-blue-color);
+}
+.how-long-card .text p{
+    color: white;
+    font-size: 13px;
+    font-weight: 100;
+    word-spacing: -0.5px;
+}
+.how-long-card .text .time{
+display: flex;
+}
+.how-long-card .text .hour,
+.how-long-card .text .minutes{
+display: inline-block;
+background-color: var(--main-color-darker);
+width: 75px;
+height: 75px;
+font-size: 23px;
+color: white;
+margin: 10px 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-flow: row;
+border-radius: 10px;
+font-weight: bold;
+position: relative;
+}
+.how-long-card .text .hour::after{
+content: "hr";
+position: absolute;
+color: var(--main-color-darker);
+/* color: transparent; */
+right: -30px;
+bottom: 0px;
+}
+.how-long-card .text .minutes::after{
+    content: "min";
+    position: absolute;
+    color: var(--main-color-darker);
+    right: -50px;
+    bottom: 0px;
+    
+}
+.how-long-card .text .description{
+    font-size: 10px;
+    display: inline-block;
+    margin-block-end: 10px;
+    color: white;
+}
+
+.how-long-card .text .btns{
+display: flex;
+align-items: center;
+
+}
+.how-long-card .text button:first-of-type{
+outline: none;
+border: none;
+padding: 5px 10px;
+margin: 0px 5px ;
+border-radius: 6px;
+background-color: var(--main-blue-color);
+color: white;
+}
+.how-long-card .text button:last-of-type{
+outline: none;
+border: none;
+padding: 5px 10px;
+margin: 0px 5px ;
+border-radius: 6px;
+background-color: transparent;
+color: var(--main-blue-color);
+border: 1px solid var(--main-blue-color);
+}.how-long-card .text .add-icon{
+color: var(--main-blue-color);
+}
+@media (max-width:767px) {
+.how-long-card {
+    flex-flow: column;  
+    padding: 10px;
+
+}
+.how-long-card .how-long-card-image{
+    flex-flow: column;
+    width: fit-content;
+    height: fit-content;
+}
+.how-long-card .how-long-card-image img{
+width: 100%;
+}
+.how-long-card-image >img:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.how-long-card-image >img:last-child{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+}

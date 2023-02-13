@@ -59,23 +59,22 @@ useLayoutEffect(()=>{
     </form>
     </div>
     <div className="user-input">
-    {userState&&<button className='earn' style={{background:'transparent',color:'#3185e7',borderRadius:'10px',border:'1px solid #3185e7',fontSize:'5px' }} >
+    {(userState)?<button className='earn' style={{background:'transparent',color:'#3185e7',borderRadius:'10px',border:'1px solid #3185e7',fontSize:'8px'}} >
      <FontAwesomeIcon icon={faAward}></FontAwesomeIcon> awards
-    </button>}
+    </button>:<div className='earn'></div>}
   {!userState&&  <button className="login-btn" onClick={showLogin} >Login
     </button>}
     {userState?null:<Login loginRef={loginRef} underlayRef={underlayRef} setUserState={setUserState}/>}    
     {(userState)?
     <button className="user-account-btn" style={{ color:'#3185e7',background:"transparent"}}><FontAwesomeIcon  icon={faUserCircle}></FontAwesomeIcon>
     {userState?null:<span className="hide-mob" style={{marginLeft:'5px'}}>create account</span>}
-    </button>:<button style={{ background:'#3185e7'}} className="create-account-btn"><FontAwesomeIcon  icon={faUserCircle}></FontAwesomeIcon>
+    </button>:<button style={{ background:'#3185e7',color:'white'}} className="create-account-btn"><FontAwesomeIcon  icon={faUserCircle}></FontAwesomeIcon>
     {userState?null:<span className="hide-mob" style={{marginLeft:'5px'}}>create account</span>}
     </button>
     }
     {userState&&<button className='noti' style={{background:'transparent',color:'#3185e7',borderRadius:'20px'}} >
     <FontAwesomeIcon icon={faBell}></FontAwesomeIcon>
     </button>}
-    
     <div className="optmize">
     <button className="optmize-btn"  onClick={showOptmize}>
     <FontAwesomeIcon icon={faCalculator}></FontAwesomeIcon>

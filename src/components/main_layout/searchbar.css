@@ -94,7 +94,7 @@ font-size: 10px;
     padding: 10px;
     }
     .search-user-bar .search-input {
-        width: 60%;
+        width: 50%;
     }
     .search-user-bar .search-input form{
     width: 100%;
@@ -105,10 +105,14 @@ font-size: 10px;
     }
     .search-user-bar .search-input >form > input[type="submit"]{
         width: 30%;
+        font-size: 10px;
     }
     .search-user-bar .search-input >form > input{
     padding: 5px 4px;
     
+    }
+    .search-user-bar .user-input{
+    width: 50%;
     }
 }
 .search-user-bar .user-input .login-btn{    

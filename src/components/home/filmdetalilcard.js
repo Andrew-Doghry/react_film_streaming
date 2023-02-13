@@ -15,17 +15,17 @@ import { faEllipsisV, faTriangleCircleSquare } from '@fortawesome/free-solid-svg
 import './filmdetailcard.css'
 let items = [1,2,3,4,5,6,7,8,9,10,11];
 let images=[
-image1,
-image2,
-image3,
-image4,
-image5,
-image6,
-image7,
-image8,
-image9,
-image10,
-image11
+    image11,
+    image6,
+    image4,
+    image3,
+    image2,
+    image8,
+    image7,
+    image10,
+    image9,
+    image5,
+    image1
 ]
 
 export const FilmDetailCard = () => {
@@ -38,7 +38,7 @@ export const FilmDetailCard = () => {
         <FontAwesomeIcon icon={faTriangleCircleSquare}></FontAwesomeIcon>
         </div>
         <img src={ele} alt="film-image" className='detail-film-image'/>
-        <p className="detail-film-text"><h1>this is title</h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, rerum! Iure deleniti saepe ex eaque, illo, repellat dignissimos facere sint </p>
+        <p className="detail-film-text"><span className='title'>this is title</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, rerum! Iure deleniti saepe ex eaque, illo, repellat dignissimos facere sint </p>
     </article>)
   })}
   </div>

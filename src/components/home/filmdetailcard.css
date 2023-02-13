@@ -5,7 +5,6 @@
     width: 400px;
     padding-block: 20px;
 }
-
 .detail-film-card{
     width: 100%;
     height: 600px;
@@ -26,9 +25,12 @@
     font-weight: 100;
     padding: 0px  10px;
 }
-.detail-film-text>h1{
+.detail-film-text > .title{
     margin: 5px 0px;
+    display: block;
     color: white;
+    font-weight: bold;
+    font-size: 20px;
     text-transform: capitalize;
 }
 .detail-film-icon{

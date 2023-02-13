@@ -10,7 +10,6 @@ fetch('api/user').then(res=>res.json()).then(user=>setUser(user['user']))
 function handleSubmit(e){
 e.preventDefault();
 if(userRef.current.value===user.name && passwordRef.current.value===user.password){
-    console.log('loged')
     setUserState(c=>!c);
     window.localStorage.setItem('logged',true);
 }

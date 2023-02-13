@@ -22,6 +22,11 @@ body {
     scrollbar-color: var(--main-blue-color) transparent;
     scrollbar-width: 10px;
 }
+::selection{
+background-color: var(--main-color-darkest);
+color: var(--main-blue-color);
+
+}
 @media (min-width:767px) {
     .hide-large{
         display: none;
@@ -92,7 +97,7 @@ a {
 width: 85%;
 }
 .content .display-content{
-margin-top: 56px;
+margin-top: 46px;
 /* position: relative; */
 z-index: initial;
 

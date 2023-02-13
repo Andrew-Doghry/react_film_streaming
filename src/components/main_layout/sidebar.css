@@ -4,7 +4,7 @@ background-color: var(--main-color-darker-2);
 display: flex;
 flex-flow: column;
 align-items: center;
-min-height: 1500px;
+min-height: 100vh;
 
 }
 .logo-links .logo{

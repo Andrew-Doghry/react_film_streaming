@@ -1,0 +1,37 @@
+.ribon{
+    background-color: black;
+    color: #eee;
+    font-weight: 100;
+    word-spacing: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    min-width: 100%;
+    overflow: hidden;
+    
+    }
+    .ribon .word{
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 5px;
+        margin:0px 5px;
+        display: flex;
+        align-items: center;
+        animation:ribon-animation 20s infinite alternate-reverse ease-in-out;
+    }
+    .ribon .word::selection{
+    color: #eee;
+    background-color: transparent;
+    }
+    @keyframes ribon-animation {
+    0%{
+    transform: translateX(-100vw);
+    }
+    50%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(-100vw);
+    }
+        
+    }

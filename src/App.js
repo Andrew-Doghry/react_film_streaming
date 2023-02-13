@@ -7,6 +7,7 @@ import { Home } from "./components/home/home";
 
 import { SearchBar } from "./components/main_layout/searchbar";
 import { SideBar} from "./components/main_layout/sidebar";
+import { Marathons } from "./components/marathons_page/marathon";
 import { TvShow } from "./components/tvshow_page/tvshow";
 export default function App(){
     let contentRef=useRef();
@@ -28,7 +29,7 @@ return (
 <Route path="/home" element={<Home />}></Route>
 <Route path="/films" element={<FilmsPage />}></Route>
 <Route path="/tv-show" element={<TvShow/>}></Route>
-<Route path="/marathons" element={<h1>hello marathons</h1>}></Route>
+<Route path="/marathons" element={<Marathons />}></Route>
 <Route path="/memes" element={<h1>hello memes</h1>}></Route>
 <Route path="/threads" element={<h1>hello threads</h1>}></Route>
 <Route path="/bermudaAwards" element={<h1>hello bermudaAwards</h1>}></Route>
