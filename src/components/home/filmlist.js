@@ -1,4 +1,4 @@
-import React, { useEffect ,useLayoutEffect,useState} from 'react'
+import React from 'react'
 import './filmlist.css'
 import { FilmListItem } from './filmlistitem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -46,13 +46,13 @@ let filmInfo = [
     {name:'black swan',publYear:2003,rating:9.5,hourDuration:1,minDuration:15},
     {name:'wall.E',publYear:2018,rating:6.4,hourDuration:2,minDuration:12}
     ]
-export const FilmList = ({title ,more}) => {
+export const FilmList = ({num,title ,more}) => {
     return (
     <>
     <section className='section'>
     <header className='section-header'>
     <h3 className='section-title'>
-     {title} 
+     {num} {title} 
     </h3>
     <a href='#more' className='see-more'>{more} <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></a>
     </header>    

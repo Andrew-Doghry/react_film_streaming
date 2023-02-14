@@ -4,6 +4,7 @@ export const Ribon = () => {
   return (
     <>
  <div className="ribon">
+ <div className="overlay"></div>
     <span className='word'> us  
     </span>
     <span className='word'> uk  

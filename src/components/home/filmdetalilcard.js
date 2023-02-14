@@ -11,9 +11,8 @@ import  image9 from './imgs/Movie Poster 9.jpg'
 import  image10 from './imgs/Movie Poster 10.jpg'
 import  image11 from './imgs/Movie Poster 11.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEllipsisV, faTriangleCircleSquare } from '@fortawesome/free-solid-svg-icons'
+import {faTriangleCircleSquare } from '@fortawesome/free-solid-svg-icons'
 import './filmdetailcard.css'
-let items = [1,2,3,4,5,6,7,8,9,10,11];
 let images=[
     image11,
     image6,

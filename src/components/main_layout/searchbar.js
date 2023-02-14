@@ -1,8 +1,8 @@
 import './searchbar.css'
-import React, { useRef, useState,useEffect, useLayoutEffect } from 'react'
+import React, { useRef, useState, useLayoutEffect } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCalculator, faSearch, faUserCircle , faThumbsUp, faBoxArchive, faBox, faShareNodes, faShare, faBell, faAward} from '@fortawesome/free-solid-svg-icons'
+import {faCalculator, faSearch, faUserCircle , faThumbsUp,  faBox, faShareNodes, faBell, faAward} from '@fortawesome/free-solid-svg-icons'
 import { Login } from './searchbar_components/login'
 export const SearchBar = ({contentRef}) => {
     let formRef=useRef();

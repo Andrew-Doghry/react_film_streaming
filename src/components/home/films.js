@@ -1,6 +1,5 @@
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useEffect, useState } from 'react'
 import  image1 from './imgs/Movie Poster 1.jpg'
 import  image2 from './imgs/Movie Poster 2.jpg'
 import  image3 from './imgs/Movie Poster 3.jpg'
@@ -12,7 +11,6 @@ import  image8 from './imgs/Movie Poster 8.jpg'
 import  image9 from './imgs/Movie Poster 9.jpg'
 import  image10 from './imgs/Movie Poster 10.jpg'
 import  image11 from './imgs/Movie Poster 11.jpg'
-let items = [1,2,3,4,5,6,7,8,9,10,11];
 let images=[
 image1,
 image2,

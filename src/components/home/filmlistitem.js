@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faImdb } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faPaperclip, faPaperPlane, faPlayCircle, faPlusSquare } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faPaperPlane, faPlayCircle, faPlusSquare } from '@fortawesome/free-solid-svg-icons'
 export const FilmListItem = ({image,filmInfo}) => {
     const{name,publYear,rating,hourDuration,minDuration}=filmInfo;
     return (

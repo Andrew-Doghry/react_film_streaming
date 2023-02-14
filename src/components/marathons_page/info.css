@@ -1,0 +1,37 @@
+.info-box {
+    width: calc(100% - 20px);
+    background-color: var(--main-color-lighter);
+    border-radius: var(--border-radius);
+border: 2px solid var(--main-color-darkest);
+padding: 10px;
+margin: 10px;
+display: flex;
+flex-flow: column;
+
+}
+    .info-box > .title{
+    text-transform: capitalize;
+    width: fit-content;
+    color: white;
+    
+    }
+    .info-box > .text{
+        margin-block-end: 20px;
+        color: #777;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+.info-box > button{
+background-color: var(--main-blue-color);
+outline: none;
+border: none;
+border-radius: 10px;
+width: fit-content;
+align-self: flex-end;
+}
+.info-box > button > a{
+    display: inline-block;
+    color: white;
+    padding: 5px 10px ;
+    
+}

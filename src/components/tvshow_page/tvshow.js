@@ -1,27 +1,34 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Film } from '../home/film'
 import { FilmList } from '../home/filmlist'
 import { HowLong } from '../home/howlong'
-import { NewsFeed } from '../home/newsfeed'
-import { Marathons } from '../marathons_page/marathon'
-import video from './awesome-video.mp4'
+import { Video } from './video'
 import './tvshow.css'
+import { InfoBox } from '../marathons_page/info'
+import { FeedBack } from '../marathons_page/feedback'
+
 
 export const TvShow = () => {
   return (
   <>
     <Film title={'tv shows'} more={'discover someting fresh'}/>
-    <Marathons title={'tv shows'} more={'discover fresh tv series'}/>
-    <div className="video-container">
-    <div className="video-overlay">
-    <h2 className="overlay-text">bermuda premium shows</h2>
-    <button className="overlay-btn"> <a href="#more">see more</a></button>
-    </div>
-    <video autoPlay muted loop className='tv-show-video'>
-    <source src={video} type='video/mp4'/>
-    </video>
-    </div>
-    <FilmList title={'12 tv shows on the list'} more={'see more'}/>
-  </>
+    <section className='section'>
+      <header className='section-header'>
+      <h4 className='section-title'><FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon> Back to all marathosns</h4>
+      </header>
+<div className="how-long-bar">
+<HowLong />
+<HowLong />
+<HowLong />
+<HowLong />
+<HowLong />
+</div>
+    </section>   <Video />
+    <FilmList num={8} title={'tv shows on the list'} more={'see more'}/>
+    <InfoBox />
+    <FeedBack />
+  </> 
   )
 }
