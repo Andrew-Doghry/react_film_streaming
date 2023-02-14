@@ -1,12 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef } from 'react'
 
 export const Login = ({loginRef,underlayRef,setUserState}) => {
     let userRef=useRef();
     let passwordRef=useRef();
-    let [user,setUser]=useState({});
-useEffect(()=>{
-fetch('api/user').then(res=>res.json()).then(user=>setUser(user['user']))
-},[])
+    let user = {name : 'andrew',password : 'ddd333'};
 function handleSubmit(e){
 e.preventDefault();
 if(userRef.current.value===user.name && passwordRef.current.value===user.password){
