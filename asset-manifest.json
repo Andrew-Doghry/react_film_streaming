@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react_film_streaming/static/css/main.4e82506f.css",
+    "main.js": "/react_film_streaming/static/js/main.9740c53d.js",
+    "static/js/787.1fee1fb8.chunk.js": "/react_film_streaming/static/js/787.1fee1fb8.chunk.js",
+    "static/media/awesome-video.mp4": "/react_film_streaming/static/media/awesome-video.82171d25d328fd1174a9.mp4",
+    "static/media/Movie Poster 11.jpg": "/react_film_streaming/static/media/Movie Poster 11.e6b3ed88e75a24936b6c.jpg",
+    "static/media/Movie Poster 7.jpg": "/react_film_streaming/static/media/Movie Poster 7.e952ca7dca327ef4c854.jpg",
+    "static/media/Movie Poster 8.jpg": "/react_film_streaming/static/media/Movie Poster 8.a4dc14410bd0846f7419.jpg",
+    "static/media/Movie Poster 9.jpg": "/react_film_streaming/static/media/Movie Poster 9.f813044bdd78dfeccec9.jpg",
+    "static/media/Movie Poster 5.jpg": "/react_film_streaming/static/media/Movie Poster 5.a01ebceaea113cac43d8.jpg",
+    "static/media/Movie Poster 2.jpg": "/react_film_streaming/static/media/Movie Poster 2.4d39291ce8f83d56c3b6.jpg",
+    "static/media/Movie Poster 4.jpg": "/react_film_streaming/static/media/Movie Poster 4.5c6bfa58e1a94ca7f7a8.jpg",
+    "static/media/Movie Poster 1.jpg": "/react_film_streaming/static/media/Movie Poster 1.bb00c66d60b8d89f3e4b.jpg",
+    "static/media/Movie Poster 10.jpg": "/react_film_streaming/static/media/Movie Poster 10.ccbc95d4353bb37f5212.jpg",
+    "static/media/Movie Poster 6.jpg": "/react_film_streaming/static/media/Movie Poster 6.fef8530aba937271b6cf.jpg",
+    "static/media/Movie Poster 3.jpg": "/react_film_streaming/static/media/Movie Poster 3.2ffb8b5acb883622ce9e.jpg",
+    "index.html": "/react_film_streaming/index.html",
+    "main.4e82506f.css.map": "/react_film_streaming/static/css/main.4e82506f.css.map",
+    "main.9740c53d.js.map": "/react_film_streaming/static/js/main.9740c53d.js.map",
+    "787.1fee1fb8.chunk.js.map": "/react_film_streaming/static/js/787.1fee1fb8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e82506f.css",
+    "static/js/main.9740c53d.js"
+  ]
+}
