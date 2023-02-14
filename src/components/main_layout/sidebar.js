@@ -21,40 +21,40 @@ export const SideBar = () => {
     }
   return (
     <div className='logo-links'>
-    <Link className="logo" to='https://andrew-doghry.github.io/react_film_streaming/'>Bermuda</Link>
+    <Link className="logo" to=''>Bermuda</Link>
     <nav className="links" ref={linksRef}>
-    <Link to='https://andrew-doghry.github.io/react_film_streaming/' onClick={handleLinkClick} className='link-item'>
+    <Link to='' onClick={handleLinkClick} className='link-item'>
     <FontAwesomeIcon icon={faTent}></FontAwesomeIcon>
     <span className='hide-mob'>home</span>
     </Link>
-    <Link to='https://andrew-doghry.github.io/react_film_streaming/films' onClick={handleLinkClick} className='link-item'>
+    <Link to='films' onClick={handleLinkClick} className='link-item'>
     <FontAwesomeIcon icon={faDisplay}></FontAwesomeIcon>
     <span className='hide-mob'>films</span>
     </Link>
-    <Link to='https://andrew-doghry.github.io/react_film_streaming/tv-show' onClick={handleLinkClick} className='link-item'>
+    <Link to='tv-show' onClick={handleLinkClick} className='link-item'>
     <FontAwesomeIcon icon={faMask}>
      </FontAwesomeIcon>
     <span className='hide-mob'>tv shows</span>
     </Link>
-    <Link to='https://andrew-doghry.github.io/react_film_streaming/marathons' onClick={handleLinkClick} className='link-item'>
+    <Link to='marathons' onClick={handleLinkClick} className='link-item'>
     <FontAwesomeIcon icon={faMobile}></FontAwesomeIcon>
     <span className='hide-mob'>marathons</span>
     </Link>
-    <Link to='https://andrew-doghry.github.io/react_film_streaming/memes' onClick={handleLinkClick} className='link-item'>
+    <Link to='memes' onClick={handleLinkClick} className='link-item'>
     <FontAwesomeIcon icon={faGrinWink}></FontAwesomeIcon>
     <span className='hide-mob'>memes</span>
     </Link>
-    <Link to='https://andrew-doghry.github.io/react_film_streaming/threads' onClick={handleLinkClick} className='link-item'>
+    <Link to='threads' onClick={handleLinkClick} className='link-item'>
     <FontAwesomeIcon icon={faBox}></FontAwesomeIcon>
     <span className='hide-mob'>threads</span>
     </Link>
-    <Link className='link-item' to='https://andrew-doghry.github.io/react_film_streaming/bermudaawards'  onClick={handleLinkClick}>
+    <Link className='link-item' to='bermudaawards'  onClick={handleLinkClick}>
     <FontAwesomeIcon icon={faFootball}></FontAwesomeIcon>
     <span className='hide-mob'>bermudaerdle</span>
     </Link>
     </nav>
     <div className="help">
-    <Link to="https://andrew-doghry.github.io/react_film_streaming/help" onClick={handleLinkClick} className='link-item help' ref={helpRef} >
+    <Link to="help" onClick={handleLinkClick} className='link-item help' ref={helpRef} >
     <FontAwesomeIcon icon={faQuestion} ></FontAwesomeIcon>
     <span className='hide-mob'>help&support</span>
     </Link>

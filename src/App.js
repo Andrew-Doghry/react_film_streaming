@@ -29,14 +29,14 @@ return (
 <div className="display-content">
 <Routes>
 
-<Route  path="https://andrew-doghry.github.io/react_film_streaming/" element={<Home />}></Route>
-<Route path="https://andrew-doghry.github.io/react_film_streaming/films" element={<FilmsPage />}></Route>
-<Route path="https://andrew-doghry.github.io/react_film_streaming/tv-show" element={<TvShow/>}></Route>
-<Route path="https://andrew-doghry.github.io/react_film_streaming/marathons" element={<Marathons />}></Route>
-<Route path="https://andrew-doghry.github.io/react_film_streaming/memes" element={<Meme />}></Route>
-<Route path="https://andrew-doghry.github.io/react_film_streaming/threads" element={<Threads />}></Route>
-<Route path="https://andrew-doghry.github.io/react_film_streaming/bermudaAwards" element={<BermudaAwards />}></Route>
-<Route path="https://andrew-doghry.github.io/react_film_streaming/help" element={<Help />}></Route>
+<Route  path="" element={<Home />}></Route>
+<Route path="films" element={<FilmsPage />}></Route>
+<Route path="tv-show" element={<TvShow/>}></Route>
+<Route path="marathons" element={<Marathons />}></Route>
+<Route path="memes" element={<Meme />}></Route>
+<Route path="threads" element={<Threads />}></Route>
+<Route path="bermudaAwards" element={<BermudaAwards />}></Route>
+<Route path="help" element={<Help />}></Route>
 </Routes>
 </div>
 </div>
