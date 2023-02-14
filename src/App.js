@@ -29,8 +29,7 @@ return (
 <SearchBar contentRef={contentRef}/>
 <div className="display-content">
 <Routes>
-<Route path="/" element={<Home />} ></Route>
-<Route path="/home" element={<Home />}></Route>
+<Route path="/" element={<Home />}></Route>
 <Route path="/films" element={<FilmsPage />}></Route>
 <Route path="/tv-show" element={<TvShow/>}></Route>
 <Route path="/marathons" element={<Marathons />}></Route>

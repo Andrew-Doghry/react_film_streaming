@@ -21,9 +21,9 @@ export const SideBar = () => {
     }
   return (
     <div className='logo-links'>
-    <Link className="logo" to='home'>Bermuda</Link>
+    <Link className="logo" to='/'>Bermuda</Link>
     <nav className="links" ref={linksRef}>
-    <Link to='/home' onClick={handleLinkClick} className='link-item'>
+    <Link to='/' onClick={handleLinkClick} className='link-item'>
     <FontAwesomeIcon icon={faTent}></FontAwesomeIcon>
     <span className='hide-mob'>home</span>
     </Link>
