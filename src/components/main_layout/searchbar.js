@@ -44,7 +44,7 @@ useLayoutEffect(()=>{
   if(window.localStorage.getItem('logged') === 'true'){
   setUserState(c=>true);
   
-  } console.log(typeof window.localStorage.getItem('logged'))
+  } 
 },[])
   return (
     <div className='search-user-bar' >

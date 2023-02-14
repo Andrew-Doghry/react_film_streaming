@@ -6,6 +6,7 @@ import { NewsFeed } from './newsfeed'
 import { Marathons } from '../marathons_page/marathon'
 import { HowLong } from './howlong'
 import { Ribon } from './ribon'
+import { FilmList } from './filmlist'
 
 export const Home = () => {
   return (
@@ -36,6 +37,7 @@ export const Home = () => {
 
     </section>
 <NewsFeed title='most recent' more='see more'></NewsFeed>
+<FilmList  title={'8 movies on the list'} more={'add more movies'}/>
 </div>
   )
 }

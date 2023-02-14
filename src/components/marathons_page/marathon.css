@@ -10,7 +10,7 @@ width: calc(100% - 20px);
 padding: 10px;
 display: flex;
 align-items: center;
-background-color: var(--main-color-lighter);
+background-color: var(--main-color-darker);
 border-radius: var(--border-radius);
 }
 .how-long-card-image{
@@ -40,6 +40,7 @@ border-radius: var(--border-radius);
 }
 .how-long-card .text h2{
     color: white;
+    font-style: italic;
     
 }
 .how-long-card .text .title{
@@ -66,7 +67,7 @@ display: flex;
 .how-long-card .text .hour,
 .how-long-card .text .minutes{
 display: inline-block;
-background-color: var(--main-color-darker);
+background-color: rgb(35, 35, 35);
 width: 75px;
 height: 75px;
 font-size: 23px;
@@ -83,7 +84,7 @@ position: relative;
 .how-long-card .text .hour::after{
 content: "hr";
 position: absolute;
-color: var(--main-color-darker);
+color: white;
 /* color: transparent; */
 right: -30px;
 bottom: 0px;
@@ -91,7 +92,7 @@ bottom: 0px;
 .how-long-card .text .minutes::after{
     content: "min";
     position: absolute;
-    color: var(--main-color-darker);
+    color: white;
     right: -50px;
     bottom: 0px;
     
@@ -132,7 +133,7 @@ color: var(--main-blue-color);
 @media (max-width:767px) {
 .how-long-card {
     flex-flow: column;  
-    padding: 10px;
+    padding: 5px;
 
 }
 .how-long-card .how-long-card-image{
@@ -154,5 +155,17 @@ width: 100%;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
+}
+.how-long-card .text .time{
+    flex-flow: column;
+    justify-content: center;
+}
+.how-long-card .text .time .hour{
+    align-self: flex-start;
+    margin-left: 0px;
+}
+.how-long-card .text .time .minutes{
+    align-self: flex-end;
+    margin-right: 50px;
 }
 }

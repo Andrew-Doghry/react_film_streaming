@@ -1,0 +1,88 @@
+.film-list-container{
+display: grid;
+grid-template-columns: repeat(2 , 50%);
+row-gap: 10px;
+column-gap: 10px;
+} 
+.film-list-item{
+    background-color: var(--main-color-lighter);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.film-list-item .item-image{
+height: 100%;
+aspect-ratio: 3/4;
+}
+
+.film-list-item .item-text{
+    padding: 10px 10px;
+    height: 100%;
+}
+.film-list-item .item-text .item-name{
+    font-style: italic;
+    text-transform: capitalize;
+    color: white;
+    margin: 5px 0px ;
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: -0.08rem;
+    white-space: nowrap;
+}
+.film-list-item .item-text .publ-year{
+    font-size: 10px;
+    color: gray;
+}
+.film-list-item .item-text .rating{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.film-list-item .item-text .rating .rating-icon{
+    color: yellow;
+    margin-right: 10px;
+}
+.film-list-item .item-text .item-duration{
+    color: yellow;
+    padding-top: 20px;
+    font-size: 10px;
+    
+}
+.film-list-item .item-text .item-duration > .num{
+color: white;
+font-size: 20px;
+}
+
+.film-list-item .item-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;    
+    color: white;
+    padding: 4px;
+    background-clip: text;
+}
+.film-list-item .item-icons .icon{
+    color: white;
+    transition: var(--main-transition);
+}
+.film-list-item .item-icons .icon:hover{
+    color: yellow;
+}
+
+@media (max-width:767px) {
+    .film-list-container{
+    grid-template-columns: 100%;
+    }
+    .film-list-item .item-icons{
+    font-size: 10px;
+    width: 80px;
+    padding: 2px;
+    }
+        
+    }
