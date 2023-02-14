@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_film_streaming/static/css/main.4e82506f.css",
-    "main.js": "/react_film_streaming/static/js/main.9740c53d.js",
+    "main.js": "/react_film_streaming/static/js/main.a2c06a69.js",
     "static/js/787.1fee1fb8.chunk.js": "/react_film_streaming/static/js/787.1fee1fb8.chunk.js",
     "static/media/awesome-video.mp4": "/react_film_streaming/static/media/awesome-video.82171d25d328fd1174a9.mp4",
     "static/media/Movie Poster 11.jpg": "/react_film_streaming/static/media/Movie Poster 11.e6b3ed88e75a24936b6c.jpg",
@@ -17,11 +17,11 @@
     "static/media/Movie Poster 3.jpg": "/react_film_streaming/static/media/Movie Poster 3.2ffb8b5acb883622ce9e.jpg",
     "index.html": "/react_film_streaming/index.html",
     "main.4e82506f.css.map": "/react_film_streaming/static/css/main.4e82506f.css.map",
-    "main.9740c53d.js.map": "/react_film_streaming/static/js/main.9740c53d.js.map",
+    "main.a2c06a69.js.map": "/react_film_streaming/static/js/main.a2c06a69.js.map",
     "787.1fee1fb8.chunk.js.map": "/react_film_streaming/static/js/787.1fee1fb8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e82506f.css",
-    "static/js/main.9740c53d.js"
+    "static/js/main.a2c06a69.js"
   ]
 }
